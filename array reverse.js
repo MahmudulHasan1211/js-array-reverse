@@ -1,15 +1,13 @@
-// array reverse 
- let num = [11, 22, 33, 44, 55, 66, 77, 88, 99]
+let num = [11, 22, 33, 44, 55, 66, 77, 88, 99];
 
+// Reverse using reverse method
+num.reverse();
+console.log(num); // This will print the reversed array
 
-//  reverse using reverse method 
-//  console.log(num);
- num.reverse()
- console.log(num)
+// Reverse using for...of (manual reverse)
+let rev_num = [];
+for (let nu of num) {
+  rev_num.unshift(nu); // Add each element to the front of rev_num
+}
 
-// //  reverse using for of 
-
-//  let rev_num = [];
-//   for ( let num of num ){
-//     console.log(num);
-//   }
+console.log(rev_num); // This will print the reversed array using manual method
